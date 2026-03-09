@@ -1,0 +1,68 @@
+Pattern 1: The "Alternate Seating" (Gap Method)
+Question: In how many ways can 5 Men and 5 Women be seated in a row so that they sit alternately?
+The Logic: "Alternating" means the pattern must be 
+ OR 
+Implementation:
+Case 1 (Starts with Man): Arrange 5 Men (
+) and 5 Women (
+) in the fixed spots. 
+.
+Case 2 (Starts with Woman): Same logic 
+.
+Final Calculation: 
+Pro Tip: If the number of Men and Women is different (e.g., 5M and 4W), there is only one possible pattern (
+), so you don't multiply by 2.
+
+
+
+Pattern 2: The "Handshake & Diagonals" (Geometry Pattern)
+Question: A polygon has 44 diagonals. How many sides does the polygon have?
+The Logic: A diagonal is a line connecting two points (
+) minus the outer sides (
+).
+Formula: 
+Implementation:
+
+
+Solve the quadratic: 
+.
+Final Answer: 
+
+
+
+
+
+
+
+
+Pattern 3: The "Identical Items into Distinct Groups" (Stars & Bars)
+Question: In how many ways can 12 identical chocolates be distributed among 3 children such that each child gets at least 2?
+The Logic: First, satisfy the minimum requirement. Give 2 to each child (
+ used). Remaining = 6 chocolates.
+Formula: 
+ (where 
+ is remaining items, 
+ is people).
+Implementation:
+Remaining 
+, People 
+.
+
+.
+Final Calculation: 
+
+
+Pattern 4: The "Digit Formation with Specific Sum"
+Question: How many 3-digit numbers can be formed using digits 1, 2, 3, 4, 5 (no repetition) such that the sum of digits is even?
+The Logic: For a sum of 3 numbers to be Even, you need:
+Case 1: 3 Even numbers (Impossible here, only 2 and 4 are even).
+Case 2: 1 Even AND 2 Odd numbers.
+Implementation:
+Select: Choose 1 Even (from {2,4}) 
+. Choose 2 Odds (from {1,3,5}) 
+.
+Total Selections: 
+ sets of numbers.
+Arrange: Each set of 3 digits can be arranged in 
+ ways.
+Final Calculation: 
